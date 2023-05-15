@@ -56,8 +56,6 @@ pid_t pid;
         return 1;
     }
   if (pid == 0) {
-        // Child process
-        printf("Child process with PID %d\n", getpid());
         sleep(2);
         exit(0);
     } else {
