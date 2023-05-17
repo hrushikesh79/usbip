@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only
  *
- *  usbip project file
+ *  header file of mointor source file
  *
  * Copyright (C) 2023 Samsung Electronics Co., Ltd.
  *
