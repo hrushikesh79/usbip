@@ -1,3 +1,13 @@
+/* SPDX-License-Identifier: GPL-2.0-only
+ *
+ * Makefile with executable name myprogram
+ *
+ * Copyright (C) 2023 Samsung Electronics Co., Ltd.
+ *
+ * Author: Hrushikesh Reddy Mudhireddy  (h.mudhireddy)
+ */
+ 
+
 CC = gcc
 CFLAGS = -Wall -Wextra
 LIBS = -ludev  
