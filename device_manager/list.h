@@ -1,3 +1,12 @@
+/* SPDX-License-Identifier: GPL-2.0-only
+ *
+ *
+ * header file to get the list of attached usb devices
+ *
+ * Copyright (C) 2023 Samsung Electronics Co., Ltd.
+ *
+ * Author: Hrushikesh Reddy Mudhireddy  (h.mudhireddy)
+ */
 
 #ifndef LIST_H
 #define LIST_H
