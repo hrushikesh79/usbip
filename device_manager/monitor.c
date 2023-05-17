@@ -11,9 +11,14 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-//#include"export.h"
+
 int monitor()
 {
+const char *action;
+const char *devnode;
+const char *vendor_id;
+const char *product_id;
+	const char *busid ;
     struct udev *udev = udev_new();
     if (!udev)
     {
@@ -40,12 +45,12 @@ int monitor()
         if (!dev)
             continue;
 
-        const char *action = udev_device_get_action(dev);
-        const char *devnode = udev_device_get_devnode(dev);
-        const char *vendor_id = udev_device_get_sysattr_value(dev, "idVendor");
-        const char *product_id = udev_device_get_sysattr_value(dev, "idProduct");
+        action = udev_device_get_action(dev);
+        devnode = udev_device_get_devnode(dev);
+        vendor_id = udev_device_get_sysattr_value(dev, "idVendor");
+        product_id = udev_device_get_sysattr_value(dev, "idProduct");
 
-	const char *busid = udev_device_get_sysname(dev);
+	busid = udev_device_get_sysname(dev);
 
 
 
@@ -56,10 +61,6 @@ int monitor()
 
        
 
-  //      if(strcmp(action,"remove")==0)
-//        unbind(busid);
-       //  if(strcmp(action,"add")==0)
-       // bind(busid);
 
         
         udev_device_unref(dev);
