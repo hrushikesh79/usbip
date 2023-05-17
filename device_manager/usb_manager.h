@@ -14,6 +14,5 @@
 #include <libudev.h>
 #include <string.h>
 #include"list.h"
-#include <libusb-1.0/libusb.h>
 #include "monitor.h"
 #endif
