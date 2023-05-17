@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only
  *
- * usbip project file
+ * source file to detect the usb at run time
  *
  * Copyright (C) 2023 Samsung Electronics Co., Ltd.
  *
