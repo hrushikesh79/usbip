@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra
-LIBS = -ludev  -lusb-1.0
+LIBS = -ludev  
 
 # List of source files
 SRCS = usb_manager.c monitor.c list.c export.c 
