@@ -46,7 +46,7 @@ struct udev *udev;
          */
         udev_enumerate_add_match_subsystem(enumerate, "usb");
  udev_enumerate_add_match_subsystem(enumerate, "usb_device");
-        //udev_enumerate_add_match_subsystem(enumerate, "platform");
+        
 
         udev_enumerate_add_nomatch_sysattr(enumerate, "bDeviceClass", "09");
         udev_enumerate_add_nomatch_sysattr(enumerate, "bInterfaceNumber", NULL);
@@ -66,13 +66,7 @@ struct udev *udev;
                 bNumIntfs = udev_device_get_sysattr_value(dev,
                                 "bNumInterfaces");
                 busid = udev_device_get_sysname(dev);
-/*              if (!idVendor || !idProduct || !bConfValue || !bNumIntfs) {
-                        err("problem getting device attributes: %s",
-                            strerror(errno));
-                        goto err_out;
-                }
 
-*/
                 /* Print information. */
                   printf(" - busid %s\n", busid);
 
