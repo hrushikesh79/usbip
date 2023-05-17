@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only
  *
  *
- * usbip project file
+ * source file to get the list of attached usb devices by busid.
  *
  * Copyright (C) 2023 Samsung Electronics Co., Ltd.
  *
